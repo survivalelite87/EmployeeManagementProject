@@ -13,6 +13,3 @@ class EmployeeRetrieveUpdateDestroyView(generics.RetrieveUpdateDestroyAPIView):
     serializer_class = EmployeeSerializer
     permission_classes = [permissions.IsAuthenticated]
 
-class EmployeeViewSet(viewsets.ModelViewSet):
-    queryset = Employee.objects.all()
-    serializer_class = EmployeeSerializer
